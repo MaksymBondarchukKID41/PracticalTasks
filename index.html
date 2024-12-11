@@ -4,7 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Особистий вебсайт Ім'я Прізвище</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Основні стилі для всього сайту */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Стилі для секцій */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #about-me {
+            background-color: #ffffff;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        #about-me h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        #about-me img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #3498db;
+        }
+
+        #about-me p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        #practical, #laboratory {
+            margin-top: 30px;
+        }
+
+        #practical h2, #laboratory h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #practical ul, #laboratory ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #practical ul li, #laboratory ul li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        #practical ul li a, #laboratory ul li a {
+            text-decoration: none;
+            color: #3498db;
+            transition: color 0.3s ease;
+        }
+
+        #practical ul li a:hover, #laboratory ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Футер */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* Мобільна адаптивність */
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #about-me {
+                margin-top: 20px;
+                padding: 20px;
+            }
+
+            #about-me img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,25 +166,21 @@
     <section id="about-me">
         <h1>Про мене</h1>
         <img src="5391051364236389008.jpg" alt="Фото студента" width="200">
-        <p><Бондарчук Максим КІД-41></p>
+        <p>Бондарчук Максим КІД-41</p>
         <p>Студент ДУІКТ, навчаюсь, працюю. Розробляю веб сайти в стилі "Програмістське мистецтво"</p>
     </section>
 
     <section id="practical">
         <h2>Практичні роботи</h2>
         <ul>
-           // <li><a href="about.html">Практична робота 1 Створення головної сторінки</a></li>
-           // <li><a href="practise2.html">Практична робота 2 Реєстранційна форма </a></li>
-           // <li><a href="practise3.html">Практична робота 3 Створення кнопки</a></li>
-           // <li><a href="practise4.html">Практична робота 4 Головна сторінка YouTub</a></li>
-           // <li><a href="practise5.html">Практична робота 5 Сторінка планера</a></li>
-           // <li><a href="practise6.html">Практична робота 6 Довільна анімація спрайтів покемонів</a></li>
-           // <li><a href="practise7.html">Практична робота 7 Лендінг сторінка "Одяг"</a></li>
-           // <li><a href="practise8.html">Практична робота Лендінг сторінка "Техніка" з використанням препроцесора CSS"</a></li>
-
-
-
-
+           <li><a href="about.html">Практична робота 1: Створення головної сторінки</a></li>
+           <li><a href="practise2.html">Практична робота 2: Реєстраційна форма</a></li>
+           <li><a href="practise3.html">Практична робота 3: Створення кнопки</a></li>
+           <li><a href="practise4.html">Практична робота 4: Головна сторінка YouTube</a></li>
+           <li><a href="practise5.html">Практична робота 5: Сторінка планера</a></li>
+           <li><a href="practise6.html">Практична робота 6: Довільна анімація спрайтів покемонів</a></li>
+           <li><a href="practise7.html">Практична робота 7: Лендінг сторінка "Одяг"</a></li>
+           <li><a href="practise8.html">Практична робота 8: Лендінг сторінка "Техніка" з використанням препроцесора CSS</a></li>
         </ul>
     </section>
 
@@ -45,12 +188,11 @@
         <h2>Лабораторні заняття</h2>
         <ul>
             <li><a href="laboratory1.html">Відсутні</a></li>
-            
         </ul>
     </section>
 
     <footer>
-        <p>Контакти: Контакти: mksmbndrck@gmail.com, 0965116339</p>
+        <p>Контакти: mksmbndrck@gmail.com, 0965116339</p>
         <p>Роки навчання: 2021-2025</p>
         <p>Мій репозиторій на GitHub: <a href="https://github.com/MaksymBondarchukKID41/PracticalTasks" target="_blank">GitHub</a></p>
     </footer>
