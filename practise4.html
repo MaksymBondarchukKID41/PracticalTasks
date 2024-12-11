@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Клон</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* Контейнер для головної структури */
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Навігаційний бар */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .search-bar input {
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            width: 300px;
+        }
+
+        .navbar .search-bar button {
+            padding: 8px;
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Основна частина сторінки */
+        .main-content {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Ліва бокова панель */
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Контейнер для відео */
+        .videos {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .video-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .video-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .video-card h3 {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">YouTube</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Пошук...">
+                <button>Пошук</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+
+            <div class="sidebar">
+                <a href="#">Головна</a>
+                <a href="#">Тренди</a>
+                <a href="#">Підписки</a>
+                <a href="#">Бібліотека</a>
+                <a href="#">Історія</a>
+            </div>
+
+            <div class="videos">
+                <div class="video-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Video Thumbnail">
+                    <h3>Відео 1</h3>
+                </div>
+                <div class="video-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Video Thumbnail">
+                    <h3>Відео 2</h3>
+                </div>
+                <div class="video-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Video Thumbnail">
+                    <h3>Відео 3</h3>
+                </div>
+                <div class="video-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Video Thumbnail">
+                    <h3>Відео 4</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>&copy; Практична 4</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
