@@ -1,0 +1,66 @@
+// Змінні для кольорів та шрифтів
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$background-color: #ecf0f1;
+$font-family: 'Arial', sans-serif;
+$button-padding: 15px 30px;
+
+// Міксин для кнопок
+@mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: $button-padding;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+}
+
+// Глобальні стилі
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $primary-color;
+    padding: 20px;
+    text-align: center;
+    
+    h1 {
+        color: white;
+        margin: 0;
+    }
+}
+
+.intro {
+    padding: 40px 20px;
+    text-align: center;
+    
+    h2 {
+        font-size: 24px;
+        color: $secondary-color;
+    }
+
+    p {
+        font-size: 16px;
+        color: $secondary-color;
+    }
+}
+
+.cta {
+    text-align: center;
+    margin-top: 20px;
+
+    .cta-button {
+        @include button-style($primary-color, white);
+    }
+}
